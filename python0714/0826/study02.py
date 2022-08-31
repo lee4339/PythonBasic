@@ -7,7 +7,10 @@ import urllib.request as ur
 # 4. 변경된 데이터에서 find_all()을 사용하여 원하는 부분의 데이터만 전부 가져와서 리스트에 저장
 # 5. find()를 사용하여 원하는 부분의 데이터를 상세하게 검색하여 가져오기
 
+# 실제 접속할 주소
 url = 'https://news.daum.net/'
+
+# 웹 서버에 접속하여 데이터를 전달
 html = ur.urlopen(url)
 soup = bs(html.read(), 'html.parser')
 
